@@ -5,12 +5,6 @@ import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Web App
-st.set_page_config(
-    page_title="ZeroGrad Project-1",
-    page_icon="📊",
-)
-
 # Set plot style
 sns.set(style="whitegrid")
 
@@ -19,9 +13,7 @@ model = joblib.load("lr_model.joblib")
 
 # App Title
 st.title("50 Startups Profit Prediction")
-st.markdown("""
-This app predicts the **Profit** of a startup based on its R&D Spend, Administration, Marketing Spend, and State.
-""")
+st.info("This app predicts the **Profit** of a startup based on its R&D Spend, Administration, Marketing Spend, and State.")
 
 # User Inputs
 st.sidebar.header("Input Features")
