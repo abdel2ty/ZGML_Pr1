@@ -5,6 +5,12 @@ import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Web App
+st.set_page_config(
+    page_title="ZeroGrad Project-1",
+    page_icon="📊",
+)
+
 # Set plot style
 sns.set(style="whitegrid")
 
